@@ -18,17 +18,16 @@ public class Day4(string Input) : Utilities.BaseDay(Input)
         int i = 0;
         var lineBytes = System.Text.Encoding.UTF8.GetBytes(line);
 
+        var byte2Max = 0x10;
+        if (prefix.Length == 6)
+            byte2Max = 0x1;
+
         while (true)
         {
             var iBytes = System.Text.Encoding.UTF8.GetBytes(i.ToString());
             var hashBytes = System.Security.Cryptography.MD5.HashData([.. lineBytes, .. iBytes]);
-            if (hashBytes[0] == 0 && hashBytes[1] == 0)
-            {
-                var hash = Convert.ToHexStringLower(hashBytes);
-
-                if (hash.StartsWith(prefix))
-                    return i.ToString();
-            }
+            if (hashBytes[0] == 0 && hashBytes[1] == 0 && hashBytes[2] < byte2Max)
+                return i.ToString();
             i++;
         }
     }
