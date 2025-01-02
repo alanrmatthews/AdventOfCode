@@ -1,0 +1,14 @@
+namespace AoC_2015;
+
+public class DayX(string Input) : Utilities.BaseDay(Input)
+{
+    public override string Part1()
+    {
+        return "TODO";
+    }
+
+    public override string Part2()
+    {
+        return "TODO";
+    }
+}

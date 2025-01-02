@@ -1,6 +1,4 @@
-﻿using Utilities;
-
-namespace AoC_2015.Tests;
+﻿namespace Utilities;
 
 [TestClass]
 public abstract class BaseTest

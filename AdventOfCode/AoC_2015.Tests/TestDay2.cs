@@ -1,7 +1,7 @@
 namespace AoC_2015.Tests;
 
 [TestClass]
-public class TestDay2Sample : BaseTest
+public class TestDay2Sample : Utilities.BaseTest
 {
     protected override Day2 getDay() => new("../../../inputs/day2_sample.txt");
     protected override string ExpectedP1() => "101";
@@ -9,7 +9,7 @@ public class TestDay2Sample : BaseTest
 }
 
 [TestClass]
-public class TestDay2 : BaseTest
+public class TestDay2 : Utilities.BaseTest
 {
     protected override Day2 getDay() => new("../../../inputs/day2.txt");
     protected override string ExpectedP1() => "1598415";
