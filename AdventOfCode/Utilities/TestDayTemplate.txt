@@ -1,14 +1,6 @@
 namespace AoC_2015.Tests;
 
 [TestClass]
-public class TestDayXSample : Utilities.BaseTest
-{
-    protected override DayX getDay() => new("../../../inputs/dayX_sample.txt");
-    protected override string ExpectedP1() => "TODO";
-    protected override string ExpectedP2() => "TODO";
-}
-
-[TestClass]
 public class TestDayX : Utilities.BaseTest
 {
     protected override DayX getDay() => new("../../../inputs/dayX.txt");
