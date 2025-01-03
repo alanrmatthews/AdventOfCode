@@ -4,10 +4,7 @@ param (
 
 $testInputPath = Join-Path -Path $PSScriptRoot -ChildPath "../AoC_2015.Tests/inputs"
 $inputFileName = "day" + $day + ".txt"
-$sampleFileName = "day" + $day + "_sample.txt"
-
 $inputFile = Join-Path -Path $testInputPath -ChildPath $inputFileName
-$sampleFile = Join-Path -Path $testInputPath -ChildPath $sampleFileName
 
 Write-Output "Creating files for day $day"
 Write-Output $inputFile
