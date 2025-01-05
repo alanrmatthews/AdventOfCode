@@ -6,6 +6,7 @@ import os
 
 from AoC2015.day1 import Day1
 from AoC2015.day8 import Day8
+from AoC2015.day9 import Day9
 from Utilities.aoc_day import AdventOfCodeDay
 
 
@@ -27,6 +28,7 @@ class Test2015(unittest.TestCase):
     test_suite = [
         TestData("Day 1", Day1(os.path.join(inputs_dir, "day1.txt")), 232, 1783),
         TestData("Day 8", Day8(os.path.join(inputs_dir, "day8.txt")), 1350, 2085),
+        TestData("Day 9", Day9(os.path.join(inputs_dir, "day9.txt")), 117, 909),
     ]
 
     def test_part_1(self):
