@@ -5,6 +5,7 @@ import unittest
 import os
 
 from AoC2015.day1 import Day1
+from AoC2015.day8 import Day8
 from Utilities.aoc_day import AdventOfCodeDay
 
 
@@ -25,19 +26,26 @@ class Test2015(unittest.TestCase):
 
     test_suite = [
         TestData("Day 1", Day1(os.path.join(inputs_dir, "day1.txt")), 232, 1783),
+        TestData("Day 8", Day8(os.path.join(inputs_dir, "day8.txt")), 1350, 2085),
     ]
 
     def test_part_1(self):
         """Test part 1 solutions."""
         for test in self.test_suite:
             with self.subTest(test=test, msg=test.day_name):
-                self.assertEqual(test.day_class.part1(), test.p1)
+                if test.p1 is not None:
+                    self.assertEqual(test.day_class.part1(), test.p1)
+                else:
+                    print("Part 1 answer is: ", test.day_class.part1())
 
     def test_part_2(self):
         """Test part 2 solutions."""
         for test in self.test_suite:
             with self.subTest(test=test, msg=test.day_name):
-                self.assertEqual(test.day_class.part2(), test.p2)
+                if test.p2 is not None:
+                    self.assertEqual(test.day_class.part2(), test.p2)
+                else:
+                    print("Part 2 answer is: ", test.day_class.part2())
 
 
 if __name__ == "__main__":
