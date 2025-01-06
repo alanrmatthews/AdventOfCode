@@ -1,7 +1,6 @@
 """Day 12: JSAbacusFramework.io"""
 
 import re
-import json
 from Utilities.aoc_day import AdventOfCodeDay
 from Utilities.file_utils import get_first_line, get_json_data
 
