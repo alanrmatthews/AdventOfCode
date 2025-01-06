@@ -6,12 +6,32 @@ import unittest
 import os
 
 from AoC2015.day1 import Day1
+
+# from AoC2015.day2 import Day2
+# from AoC2015.day3 import Day3
+# from AoC2015.day4 import Day4
+# from AoC2015.day5 import Day5
+# from AoC2015.day6 import Day6
+# from AoC2015.day7 import Day7
 from AoC2015.day8 import Day8
 from AoC2015.day9 import Day9
 from AoC2015.day10 import Day10
 from AoC2015.day11 import Day11
 from AoC2015.day12 import Day12
 from AoC2015.day13 import Day13
+from AoC2015.day14 import Day14
+
+# from AoC2015.day15 import Day15
+# from AoC2015.day16 import Day16
+# from AoC2015.day17 import Day17
+# from AoC2015.day18 import Day18
+# from AoC2015.day19 import Day19
+# from AoC2015.day20 import Day20
+# from AoC2015.day21 import Day21
+# from AoC2015.day22 import Day22
+# from AoC2015.day23 import Day23
+# from AoC2015.day24 import Day24
+# from AoC2015.day25 import Day25
 from Utilities.aoc_day import AdventOfCodeDay
 
 
@@ -45,8 +65,8 @@ class Test2015(unittest.TestCase):
         # TestData("Day 10", Day10(os.path.join(inputs_dir, "day10.txt")), 252594, 3579328),
         # TestData("Day 11", Day11(os.path.join(inputs_dir, "day11.txt")), p1s="hepxxyzz", p2s="heqaabcc"),
         # TestData("Day 12", Day12(os.path.join(inputs_dir, "day12.txt")), 156366, 96852),
-        TestData("Day 13", Day13(os.path.join(inputs_dir, "day13.txt")), 709, 668),
-        # TestData("Day 14", Day14(os.path.join(inputs_dir, "day14.txt")), None, None),
+        # TestData("Day 13", Day13(os.path.join(inputs_dir, "day13.txt")), 709, 668),
+        TestData("Day 14", Day14(os.path.join(inputs_dir, "day14.txt")), 2640, 1102),
         # TestData("Day 15", Day15(os.path.join(inputs_dir, "day15.txt")), None, None),
         # TestData("Day 16", Day16(os.path.join(inputs_dir, "day16.txt")), None, None),
         # TestData("Day 17", Day17(os.path.join(inputs_dir, "day17.txt")), None, None),
