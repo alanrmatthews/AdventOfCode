@@ -1,8 +1,8 @@
 """Day 14: Reindeer Olympics"""
 
-import numpy as np
-from Utilities.aoc_day import AdventOfCodeDay
 from dataclasses import dataclass
+
+from Utilities.aoc_day import AdventOfCodeDay
 
 
 @dataclass
