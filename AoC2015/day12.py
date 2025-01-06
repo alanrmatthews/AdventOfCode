@@ -3,7 +3,7 @@
 import re
 import json
 from Utilities.aoc_day import AdventOfCodeDay
-from Utilities.file_utils import get_first_line
+from Utilities.file_utils import get_first_line, get_json_data
 
 
 class Day12(AdventOfCodeDay):
@@ -14,8 +14,7 @@ class Day12(AdventOfCodeDay):
         return sum(map(int, re.findall(r"(-?\d+)", line)))
 
     def part2(self):
-        line = get_first_line(self.input_file)
-        data = json.loads(line)
+        data = get_json_data(self.input_file)
         return self.json_sum(data)
 
     def json_sum(self, data):

@@ -1,5 +1,6 @@
 """File utilities for reading files and returning data in a usable format."""
 
+import json
 import re
 import typing
 
@@ -8,6 +9,11 @@ def get_first_line(file_path: str) -> str:
     """Read the file at the given path and return the first line."""
     with open(file_path, encoding="utf-8") as file:
         return file.readline().strip()
+
+
+def get_json_data(file_path: str) -> dict:
+    """Read the file at the given path and return the json data."""
+    return json.load(open(file_path, encoding="utf-8"))
 
 
 def get_int_lines(file_path: str) -> typing.Generator[list[int]]:
