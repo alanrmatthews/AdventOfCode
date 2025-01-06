@@ -1,4 +1,4 @@
-"""Day 13: Knights of the Dinner Table"""
+"""Day 15: Science for Hungry People"""
 
 from dataclasses import dataclass
 from Utilities.aoc_day import AdventOfCodeDay
@@ -17,10 +17,10 @@ class Ingredient:
 
 
 class Day15(AdventOfCodeDay):
-    """Day 13: Knights of the Dinner Table"""
+    """Day 15: Science for Hungry People"""
 
     def __init__(self, input_file: str):
-        """Constructor for Day 13: Knights of the Dinner Table."""
+        """Constructor for Day"""
         AdventOfCodeDay.__init__(self, input_file)
         self.ingredients = None
 
