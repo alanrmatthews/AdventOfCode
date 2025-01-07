@@ -25,8 +25,8 @@ from AoC2015.day16 import Day16
 from AoC2015.day17 import Day17
 from AoC2015.day18 import Day18
 from AoC2015.day19 import Day19
+from AoC2015.day20 import Day20
 
-# from AoC2015.day20 import Day20
 # from AoC2015.day21 import Day21
 # from AoC2015.day22 import Day22
 # from AoC2015.day23 import Day23
@@ -71,8 +71,8 @@ class Test2015(unittest.TestCase):
         # TestData("Day 16", Day16(os.path.join(inputs_dir, "day16.txt")), 213, 323),
         # TestData("Day 17", Day17(os.path.join(inputs_dir, "day17.txt")), 654, 57),
         # TestData("Day 18", Day18(os.path.join(inputs_dir, "day18.txt")), 1061, 1006),
-        TestData("Day 19", Day19(os.path.join(inputs_dir, "day19.txt")), 518, 200),
-        # TestData("Day 20", Day20(os.path.join(inputs_dir, "day20.txt")), None, None),
+        # TestData("Day 19", Day19(os.path.join(inputs_dir, "day19.txt")), 518, 200),
+        TestData("Day 20", Day20(os.path.join(inputs_dir, "day20.txt")), 786240, 831600),
         # TestData("Day 21", Day21(os.path.join(inputs_dir, "day21.txt")), None, None),
         # TestData("Day 22", Day22(os.path.join(inputs_dir, "day22.txt")), None, None),
         # TestData("Day 23", Day23(os.path.join(inputs_dir, "day23.txt")), None, None),
