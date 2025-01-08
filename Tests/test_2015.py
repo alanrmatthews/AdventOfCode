@@ -9,12 +9,12 @@ from parameterized import parameterized_class
 
 from AoC2015 import day1
 
-# from AoC2015.day2 import Day2
-# from AoC2015.day3 import Day3
-# from AoC2015.day4 import Day4
-# from AoC2015.day5 import Day5
-# from AoC2015.day6 import Day6
-# from AoC2015.day7 import Day7
+from AoC2015.day2 import Day2
+from AoC2015.day3 import Day3
+from AoC2015.day4 import Day4
+from AoC2015.day5 import Day5
+from AoC2015.day6 import Day6
+from AoC2015.day7 import Day7
 from AoC2015.day8 import Day8
 from AoC2015.day9 import Day9
 from AoC2015.day10 import Day10
@@ -30,22 +30,21 @@ from AoC2015.day19 import Day19
 from AoC2015.day20 import Day20
 from AoC2015.day21 import Day21
 from AoC2015.day22 import Day22
-
-# from AoC2015.day23 import Day23
-# from AoC2015.day24 import Day24
-# from AoC2015.day25 import Day25
+from AoC2015.day23 import Day23
+from AoC2015.day24 import Day24
+from AoC2015.day25 import Day25
 
 
 inputs_dir = os.path.join(os.getcwd(), "Tests", "inputs", "2015")
 
 test_suite = [
     ("Day 1", day1.Day1(os.path.join(inputs_dir, "day1.txt")), 232, 1783),
-    # ("Day 2", Day2(os.path.join(inputs_dir, "day2.txt")), None, None),
-    # ("Day 3", Day3(os.path.join(inputs_dir, "day3.txt")), None, None),
-    # ("Day 4", Day4(os.path.join(inputs_dir, "day4.txt")), None, None),
-    # ("Day 5", Day5(os.path.join(inputs_dir, "day5.txt")), None, None),
-    # ("Day 6", Day6(os.path.join(inputs_dir, "day6.txt")), None, None),
-    # ("Day 7", Day7(os.path.join(inputs_dir, "day7.txt")), None, None),
+    ("Day 2", Day2(os.path.join(inputs_dir, "day2.txt")), None, None),
+    ("Day 3", Day3(os.path.join(inputs_dir, "day3.txt")), None, None),
+    ("Day 4", Day4(os.path.join(inputs_dir, "day4.txt")), None, None),
+    ("Day 5", Day5(os.path.join(inputs_dir, "day5.txt")), None, None),
+    ("Day 6", Day6(os.path.join(inputs_dir, "day6.txt")), None, None),
+    ("Day 7", Day7(os.path.join(inputs_dir, "day7.txt")), None, None),
     ("Day 8", Day8(os.path.join(inputs_dir, "day8.txt")), 1350, 2085),
     ("Day 9", Day9(os.path.join(inputs_dir, "day9.txt")), 117, 909),
     ("Day 10", Day10(os.path.join(inputs_dir, "day10.txt")), 252594, 3579328),
@@ -61,9 +60,9 @@ test_suite = [
     ("Day 20", Day20(os.path.join(inputs_dir, "day20.txt")), 786240, 831600),
     ("Day 21", Day21(os.path.join(inputs_dir, "day21.txt")), 91, 158),
     ("Day 22", Day22(os.path.join(inputs_dir, "day22.txt")), 900, 1216),
-    # ("Day 23", Day23(os.path.join(inputs_dir, "day23.txt")), None, None),
-    # ("Day 24", Day24(os.path.join(inputs_dir, "day24.txt")), None, None),
-    # ("Day 25", Day25(os.path.join(inputs_dir, "day25.txt")), None, None),
+    ("Day 23", Day23(os.path.join(inputs_dir, "day23.txt")), None, None),
+    ("Day 24", Day24(os.path.join(inputs_dir, "day24.txt")), None, None),
+    ("Day 25", Day25(os.path.join(inputs_dir, "day25.txt")), None, None),
 ]
 
 
