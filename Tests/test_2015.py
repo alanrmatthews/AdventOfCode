@@ -60,7 +60,7 @@ test_suite = [
     ("Day 20", Day20(os.path.join(inputs_dir, "day20.txt")), 786240, 831600),
     ("Day 21", Day21(os.path.join(inputs_dir, "day21.txt")), 91, 158),
     ("Day 22", Day22(os.path.join(inputs_dir, "day22.txt")), 900, 1216),
-    ("Day 23", Day23(os.path.join(inputs_dir, "day23.txt")), None, None),
+    ("Day 23", Day23(os.path.join(inputs_dir, "day23.txt")), 307, 160),
     ("Day 24", Day24(os.path.join(inputs_dir, "day24.txt")), None, None),
     ("Day 25", Day25(os.path.join(inputs_dir, "day25.txt")), None, None),
 ]
