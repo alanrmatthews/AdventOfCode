@@ -13,7 +13,8 @@ def get_first_line(file_path: str) -> str:
 
 def get_json_data(file_path: str) -> dict:
     """Read the file at the given path and return the json data."""
-    return json.load(open(file_path, encoding="utf-8"))
+    with open(file_path, encoding="utf-8") as file:
+        return json.load(file)
 
 
 def get_int_lines(file_path: str) -> typing.Generator[list[int]]:
