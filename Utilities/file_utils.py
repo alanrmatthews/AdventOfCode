@@ -24,6 +24,12 @@ def get_int_lines(file_path: str) -> typing.Generator[list[int]]:
             yield [int(value) for value in line.split()]
 
 
+def get_int_list(file_path: str) -> list[int]:
+    """Read the file at the given path and return a list of integers."""
+    with open(file_path, encoding="utf-8") as file:
+        return [int(value.strip()) for value in file.readlines()]
+
+
 def get_character_lines(file_path: str) -> list[list[chr]]:
     """Read the file at the given path and return a list of characters for each line in the file."""
     with open(file_path, encoding="utf-8") as file:
