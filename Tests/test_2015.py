@@ -5,10 +5,9 @@ import unittest
 import time
 import os
 
-from parameterized import parameterized_class, parameterized
+from parameterized import parameterized_class
 
 from AoC2015 import day1
-
 from AoC2015.day2 import Day2
 from AoC2015.day3 import Day3
 from AoC2015.day4 import Day4
@@ -98,7 +97,9 @@ class Test2015(unittest.TestCase):
 
     def test_part_2(self):
         """Test part 2 solutions."""
+        # with cProfile.Profile() as pr:
         result = self.day.part2()
+        # pr.print_stats()
         if self.Expected2 is not None:
             self.assertEqual(result, self.Expected2)
         else:
@@ -106,4 +107,4 @@ class Test2015(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    r = unittest.main()
+    unittest.main()
